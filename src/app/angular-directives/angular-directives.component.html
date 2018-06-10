@@ -1,0 +1,19 @@
+<p *ngIf = "appStatus">{{appTitle}}</p>
+
+<ul>
+  <li *ngFor = "let student of students">{{student.id}} : {{student.name}}</li>
+</ul>
+
+
+<ul [ngSwitch] = "name">
+  <li *ngSwitchCase = "'krunal'">Hi Krunal</li>
+  <li *ngSwitchCase = "'Ashwini'">Hi Ashwini</li>
+  <li *ngSwitchCase = "'Vedant'">Hi Vedant</li>
+  <li *ngSwitchCase = "'Dinesh'">Hi Dinesh</li>
+</ul>
+
+<p [ngStyle] = "{'color': color, 'font-size': fontSize, 'background-color': bgcolor}">
+  Hi This is  directive
+</p>
+
+<p [ngClass] = "['textColor', 'bgColor']">This is ngClass directive</p>
